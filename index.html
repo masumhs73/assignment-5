@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Board</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    
+
+<body class="bg-sky-50 px-20 py-4">
+    <header class="mb-10">
+        <nav class="bg-white rounded-xl p-4">
+            <div class="flex justify-between ">
+                <div class="flex items-center">
+                    <img src="assets/logo.png" alt="">
+                    <h2 class="text-3xl">Dev<span class="font-bold">Board</span>
+                    </h2>
+                </div>
+                <div class="flex gap-8">
+                    <div class="flex gap-4 items-center">
+                        <img src="assets/checkbox.png" alt="">
+                        <p>23</p>
+                    </div>
+                    <img src="assets/theme-btn.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="flex gap-4 h-screen">
+        <section class="w-9/12 bg-white rounded-xl p-3">
+            <div class="flex items-center justify-center gap-3">
+                <div class="w-3/12 flex justify-center items-center rounded-xl bg-sky-50 p-4 gap-3 h-28">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <p class="text-sm">Task Assigned</p>
+                        <h2>05</h2>
+                    </div>
+                </div>
+                <div
+                    class="w-6/12 flex justify-center items-center rounded-xl p-4 gap-5 h-28 bg-gradient-to-r from-indigo-700 via-indigo-400 to-indigo-300">
+                    <img src="assets/board.png" alt="">
+                    <p class="text-xl text-white">Discover Something <br> New Today!</p>
+                </div>
+                <div class="w-3/12 flex justify-center items-center rounded-xl bg-sky-50 p-4 gap-3 h-28">
+                    <div class="p-3 bg-white rounded-full">
+                        <img src="assets/calender.png" alt="">
+                    </div>
+                    <p>Wed, Jul 28 2025 </p>
+                </div>
+            </div>
+        </section>
+        <section class="w-3/12 bg-white rounded-xl text-center">
+            <div class="flex justify-center m-4 gap-4 ">
+                <img src="assets/activity.png" alt="">
+                <p>Activity Log</p>
+            </div>
+            <button class="btn bg-indigo-700 text-white">Clear History</button>
+        </section>
+    </main>
 </body>
+
 </html>
