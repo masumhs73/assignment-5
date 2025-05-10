@@ -7,7 +7,8 @@ let devCount = 0;
 let taskCount = 0;
 const buttons = document.querySelectorAll('.btnComplete');
 for (const btnComplete of buttons) {
-    btnComplete.addEventListener('click', function () {
+    btnComplete.addEventListener('click', function (event) {
+        event.preventDefault();
         alert('Board updated successfully');
         btnComplete.disabled = true;
         devCount++;
