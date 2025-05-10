@@ -1,22 +1,34 @@
-let devCount = document.getElementById('dev-count').innerText;
-let convertedDevCount = parseInt(devCount);
-let taskAssign = document.getElementById('task-assign').innerText;
-console.log(taskAssign);
-let count = 0;
+const devNumber = document.getElementById('dev-number').innerText;
+const convertedDevNumber = parseInt(devNumber);
+const taskNumber = document.getElementById('task-number').innerText;
+const convertedTaskNumber = parseInt(taskNumber);
+// console.log(taskAssign);
+let devCount = 0;
+let taskCount = 0;
 const buttons = document.querySelectorAll('.btnComplete');
-for(const btnComplete of buttons){
-    btnComplete.addEventListener('click', function(){
+for (const btnComplete of buttons) {
+    btnComplete.addEventListener('click', function () {
         alert('Board updated successfully');
         btnComplete.disabled = true;
-        count ++;
-        const updatedDevCount = convertedDevCount + count;
+        devCount++;
+        const updatedDevNumber = convertedDevNumber + devCount;
         // console.log(updatedDevCount);
-        document.getElementById('dev-count').innerText = updatedDevCount;
+        document.getElementById('dev-number').innerText = updatedDevNumber;
 
-    //    if(attempt >=1){
-    //     const devNumber = convertedDevNumber + attempt;
-    //     attempt++;
-    //     console.log(devNumber);
-    //    }
+        taskCount++;
+        const updatedTaskNumber = convertedTaskNumber - taskCount;
+        // console.log(updatedTaskNumber);
+        document.getElementById('task-number').innerText = updatedTaskNumber;
+        if (updatedTaskNumber === 0) {
+            alert('Congrats! You have completed all the current tasks.');
+        }
+        const activityContainer = document.getElementById('activity');
+        const div = document.createElement('div');
+        div.classList.add("bg-sky-50", "m-3", "p-2");
+        div.innerHTML=`
+        <p>You have completed the task ${card-title} at 10:00 AM</p>
+        `
+        activityContainer.appendChild(div);
     })
+
 }

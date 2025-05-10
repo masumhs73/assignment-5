@@ -27,7 +27,7 @@
                 <div class="flex gap-8">
                     <div class="flex gap-4 items-center">
                         <img src="assets/checkbox.png" alt="">
-                        <p id="dev-count">23</p>
+                        <p id="dev-number" class="font-bold">23</p>
                     </div>
                     <img src="assets/theme-btn.png" alt="">
                 </div>
@@ -43,11 +43,10 @@
                     </div>
                     <div>
                         <p class="text-sm">Task Assigned</p>
-                        <h2 id="task-assign">05</h2>
+                        <h2 id="task-number" class="font-bold text-xl">6</h2>
                     </div>
                 </div>
-                <div
-                    class="w-6/12 flex justify-center items-center rounded-xl p-4 gap-5 h-28 bg-gradient-to-r from-indigo-700 via-indigo-400 to-indigo-300">
+                <div id="discover" class="w-6/12 flex justify-center items-center rounded-xl p-4 gap-5 h-28 bg-gradient-to-r from-indigo-700 via-indigo-400 to-indigo-300">
                     <img src="assets/board.png" alt="">
                     <p class="text-xl text-white">Discover Something <br> New Today!</p>
                 </div>
@@ -64,7 +63,7 @@
             <div class="grid grid-cols-3 gap-4 mt-6">
                 <div class="bg-sky-50 rounded-xl p-4">
                     <p class="bg-white p-2 rounded-xl w-fit mb-2">ShopEase</p>
-                    <h2 class="text-lg font-bold mb-3">Fix Mobile Button Issue</h2>
+                    <h2 class="card-title text-lg font-bold mb-3">Fix Mobile Button Issue</h2>
                     <p class="bg-white p-4 rounded-xl mb-5 text-sm text-gray-500">A card component has a figure, a body part, and inside body there are title and action parts.</p>
                     <div class="flex justify-between gap-2">
                         <div>
@@ -76,7 +75,7 @@
                 </div>
                 <div class="bg-sky-50 rounded-xl p-4">
                     <p class="bg-white p-2 rounded-xl w-fit mb-2">CloudSync</p>
-                    <h2 class="text-lg font-bold mb-3">Add Dark Mode</h2>
+                    <h2 class="card-title text-lg font-bold mb-3">Add Dark Mode</h2>
                     <p class="bg-white p-4 rounded-xl mb-5 text-sm text-gray-500">Stores the user's preference in
                         localStorage, update CSS variable...</p>
                     <div class="flex justify-between gap-2">
@@ -141,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="w-3/12 bg-white rounded-xl text-center">
+        <section id="activity" class="w-3/12 bg-white rounded-xl text-center">
             <div class="flex justify-center m-4 gap-4 ">
                 <img src="assets/activity.png" alt="">
                 <p>Activity Log</p>
@@ -152,6 +151,7 @@
 
     <!-- JS file -->
      <script src="script/complete.js"></script>
+     <script src="script/faq.js"></script>
 </body>
 
 </html>
