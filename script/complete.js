@@ -40,3 +40,11 @@ for (const btnComplete of buttons) {
     })
 
 }
+
+
+document.getElementById('btn-clear')
+    .addEventListener('click', function (event) {
+        event.preventDefault();
+        
+        div.innerHTML.remove();
+    })
