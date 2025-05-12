@@ -25,7 +25,7 @@ for (const btnComplete of buttons) {
             alert('Congrats! You have completed all the current tasks.');
         }
 
-        const activityContainer = document.getElementById('activity');
+        const activityContainer = document.getElementById('activity-container');
         const div = document.createElement('div');
         div.classList.add("bg-sky-50", "m-3", "p-2");
 
